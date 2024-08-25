@@ -40,6 +40,6 @@ class UserTest {
     @Test
     void testSetPassword() {
         user.setPassword("12345");
-        assertEquals("12345", user.getPassword());
+        assertTrue(user.validatePassword("12345"));
     }
 }
